@@ -275,7 +275,7 @@ void dfs(Graph* G,int a){
 void bfs(Graph* G,int v){
     queue q;
     q.size = G->V;
-    q.f = q.r = 0;
+    q.f = q.r = -1;
     q.arr = (int*) malloc(q.size*sizeof(int)); 
 	int node;
     int i = v;
